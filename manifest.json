@@ -1,16 +1,16 @@
 {
-  "version": "3.2.0",
+  "version": "3.3.0",
   "codename": "Obsidian Overdrive",
   "releasedAt": "2026-11-22",
   "channel": "Stable · Universal x86_64",
-  "sizeMB": "9.0 MB",
-  "sha256": "8d8a17dcd0d430c97486860b1ba10ed0edc11248180bc66a65c9666d9e7015c8",
-  "downloadUrl": "https://github.com/eroicoyt778-ops/koland-updates/releases/download/v3.2.0/endha-koland-universal.tar.zst",
+  "sizeMB": "9.0MB",
+  "sha256": "d4eef48ad7490a7751d056b4e364e42fc1c9a84b44065baab461b4e15bfaf19a",
+  "downloadUrl": "https://github.com/eroicoyt778-ops/koland-updates/releases/download/v3.3.0/endha-koland-universal.tar.zst",
   "highlights": [
+    "Panel de Sonido con selector de Salida/Micrófono y Modo Múltiple, Pantalla estilo Apple Displays con desplegables, Color Hex (#75343f) + Bordes y 0% uso GPU en Modo Reposo",
     "Motor Universal Fullscreen Overdrive por Monitor (0 shaders en pantalla completa + aislamiento de núcleos)",
     "Segundo monitor con Obsidian Liquid Glass 100% intacto mientras juegas en pantalla completa",
     "Redimensión instantánea de barra y fondo (+80 ms) sin parpadeo negro",
-    "Purga automática de procesos fantasma (SteamCEF / Xwayland) y consumo base ~440 MB RAM",
-    "Centro OTA KoLand Update integrado en Configuración (1 petición al iniciar y cada 1h)"
+    "Purga automática de procesos fantasma (SteamCEF / Xwayland) y consumo base ~440 MB RAM"
   ]
 }
