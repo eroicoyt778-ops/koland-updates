@@ -4,7 +4,7 @@
   "releasedAt": "2026-11-22",
   "channel": "Stable · Universal x86_64",
   "sizeMB": "9.0 MB",
-  "sha256": "bd398e1b526550b948539179b3f93d1da2bab46be2ced29dcea9ffcbde7ae077",
+  "sha256": "55e6fea060cb169b27caca0d50ab9b240984c9c1dd7f18023d2d61ef14410528",
   "downloadUrl": "https://github.com/eroicoyt778-ops/koland-updates/releases/download/v3.2.0/endha-koland-universal.tar.zst",
   "highlights": [
     "Motor Universal Fullscreen Overdrive por Monitor (0 shaders en pantalla completa + aislamiento de núcleos)",
