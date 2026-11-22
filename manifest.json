@@ -4,8 +4,8 @@
   "releasedAt": "2026-11-22",
   "channel": "Stable · Universal x86_64",
   "sizeMB": "9.0MB",
-  "sha256": "d4eef48ad7490a7751d056b4e364e42fc1c9a84b44065baab461b4e15bfaf19a",
-  "downloadUrl": "https://github.com/eroicoyt778-ops/koland-updates/releases/download/v3.3.0/endha-koland-universal.tar.zst",
+  "sha256": "1da7df0bca8957bb72090312087de84f906170e58e03dde79aac920a82cf3879",
+  "downloadUrl": "https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/main/endha-koland-universal.tar.zst",
   "highlights": [
     "Panel de Sonido con selector de Salida/Micrófono y Modo Múltiple, Pantalla estilo Apple Displays con desplegables, Color Hex (#75343f) + Bordes y 0% uso GPU en Modo Reposo",
     "Motor Universal Fullscreen Overdrive por Monitor (0 shaders en pantalla completa + aislamiento de núcleos)",
