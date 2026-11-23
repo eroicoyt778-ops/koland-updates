@@ -1,6 +1,6 @@
 # KoLand OS · Universal OTA Updates (`Obsidian Liquid Glass`)
 
-![Versión](https://img.shields.io/badge/KoLand_OS-v3.6.1-10b981?style=for-the-badge)
+![Versión](https://img.shields.io/badge/KoLand_OS-v3.6.2-10b981?style=for-the-badge)
 ![Codename](https://img.shields.io/badge/Edici%C3%B3n-Obsidian_Overdrive-18181b?style=for-the-badge)
 ![Arquitectura](https://img.shields.io/badge/Universal-x86--64--v2-3b82f6?style=for-the-badge)
 ![Consumo](https://img.shields.io/badge/OTA_Reposo-0.0_MB_RAM-f59e0b?style=for-the-badge)
@@ -13,24 +13,24 @@ Servidor oficial de actualizaciones OTA firmadas (SHA-256) para el entorno de es
 
 | Campo | Valor |
 | --- | --- |
-| **Versión actual** | `v3.6.1` (*Obsidian Overdrive*) |
+| **Versión actual** | `v3.6.2` (*Obsidian Overdrive*) |
 | **Fecha de lanzamiento** | `2026-11-23` |
 | **Canal** | `Stable · Universal x86_64` |
 | **Tamaño del paquete** | `9.1MB` |
-| **Firma SHA-256** | `cbbdd621d32fb16ce843dad33cfd11f0d305e862c4943e716ce7706609ce940b` |
-| **Release en GitHub** | [`v3.6.1`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.6.1) |
-| **Manifiesto OTA** | [`manifest.json`](https://github.com/eroicoyt778-ops/koland-updates/releases/download/v3.6.1/manifest.json) · [`main/manifest.json`](https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/main/manifest.json) |
+| **Firma SHA-256** | `b42e889cb01d6320d7c095625fdc828f9dae6ddc362bb7fc77a6b723f881954b` |
+| **Release en GitHub** | [`v3.6.2`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.6.2) |
+| **Manifiesto OTA** | [`manifest.json`](https://github.com/eroicoyt778-ops/koland-updates/releases/download/v3.6.2/manifest.json) · [`main/manifest.json`](https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/main/manifest.json) |
 | **Paquete Universal** | [`endha-koland-universal.tar.zst`](https://github.com/eroicoyt778-ops/koland-updates/releases/latest/download/endha-koland-universal.tar.zst) |
 
 ---
 
 ## Novedades destacadas
 
+- Panel de Sonido v2.0 (Pure Floating Liquid Glass): migración a PanelWindow con altura fija y máscara exacta (cero temblores/recortes al abrir desplegables), fix crítico de Modo Múltiple (ya no explota a 150% y restaura salida/puerto/volumen exactos al desactivar), sliders nativos PipeWire 0 ms sin rebote ni NaN%, auto-desmuteo al subir volumen, iconos Nerd Font alineados sin colisión en Boost 150%, sincronización de color personalizado y soporte IPC audio
 - Modo Reposar v2.0: auto-rearmado instantáneo de IdleMonitor (soluciona que no se activara solo), cola secuencial atómica de hardware sin race conditions, restauración exacta de perfil y CPU Boost completo al despertar, detector multimedia real sin falsos positivos (video/audio/llamadas/inhibidores), soporte PrepareForSleep, brillo en reposo configurable (2-15%), DPMS opcional y diagnóstico en vivo en Energía y Reposo
 - Nuevo apartado Color de iconos y barra en Personalizar (Pure Floating Liquid Glass): color global con paleta/Hex/rápidos, modo Multicolor, sincronizar Del cristal, personalización individual por icono (Wi-Fi, Bluetooth, Audio, Brillo, Batería, Notificaciones y Escritorios/Dock) y alcances opcionales para Texto/reloj, Logo EndHa y Paneles/Ajustes (0% CPU extra)
 - Pantalla de bloqueo y SDDM 100% parcheados (modo Sólido Mate opaco de alto contraste, layout anti-colisión y sincronización atómica), botón para desactivar animaciones del escritorio en Personalizar, fix del rebote inicial en Wi-Fi/Bluetooth y shell sin polling (eventos D-Bus, SystemClock y toasts en GPU)
 - Motor OTA en tiempo real (aviso flotante Liquid Glass + píldora en barra + HEAD ~200 B sin bucles), nuevo Centro de Ajustes modular Pure Floating Liquid Glass v10 y corrección de zonas táctiles en Menú EndHa y Batería
-- Nuevo apartado Pantalla de Bloqueo en Apariencia: personalización completa de SDDM (fondo independiente o sincronizado, reloj 12h/24h, color Hex y subtítulo) + botón Bloquear SDDM Eco 0% consumo
 
 ---
 
@@ -48,6 +48,7 @@ Servidor oficial de actualizaciones OTA firmadas (SHA-256) para el entorno de es
 <!-- HISTORY_START -->
 | Versión | Fecha | Cambios principales |
 | --- | --- | --- |
+| [`v3.6.2`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.6.2) | `2026-11-23` | Panel de Sonido v2.0 (Pure Floating Liquid Glass): migración a PanelWindow con altura fija y máscara exacta (cero temblores/recortes al abrir desplegables), fix crítico de Modo Múltiple (ya no explota a 150% y restaura salida/puerto/volumen exactos al desactivar), sliders nativos PipeWire 0 ms sin rebote ni NaN%, auto-desmuteo al subir volumen, iconos Nerd Font alineados sin colisión en Boost 150%, sincronización de color personalizado y soporte IPC audio |
 | [`v3.6.1`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.6.1) | `2026-11-23` | Modo Reposar v2.0: auto-rearmado instantáneo de IdleMonitor (soluciona que no se activara solo), cola secuencial atómica de hardware sin race conditions, restauración exacta de perfil y CPU Boost completo al despertar, detector multimedia real sin falsos positivos (video/audio/llamadas/inhibidores), soporte PrepareForSleep, brillo en reposo configurable (2-15%), DPMS opcional y diagnóstico en vivo en Energía y Reposo |
 | [`v3.6.0`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.6.0) | `2026-11-23` | Nuevo apartado Color de iconos y barra en Personalizar (Pure Floating Liquid Glass): color global con paleta/Hex/rápidos, modo Multicolor, sincronizar Del cristal, personalización individual por icono (Wi-Fi, Bluetooth, Audio, Brillo, Batería, Notificaciones y Escritorios/Dock) y alcances opcionales para Texto/reloj, Logo EndHa y Paneles/Ajustes (0% CPU extra) |
 | [`v3.5.1`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.5.1) | `2026-11-23` | Pantalla de bloqueo y SDDM 100% parcheados (modo Sólido Mate opaco de alto contraste, layout anti-colisión y sincronización atómica), botón para desactivar animaciones del escritorio en Personalizar, fix del rebote inicial en Wi-Fi/Bluetooth y shell sin polling (eventos D-Bus, SystemClock y toasts en GPU) |
