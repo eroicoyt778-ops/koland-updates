@@ -1,16 +1,16 @@
 {
-  "version": "3.6.0",
+  "version": "3.6.1",
   "codename": "Obsidian Overdrive",
   "releasedAt": "2026-11-23",
   "channel": "Stable · Universal x86_64",
   "sizeMB": "9.1MB",
-  "sha256": "93f2a94bd7ff54b59dd831fd7a6ca6595a2e31b97f1334c262d5b839a4aa1523",
-  "downloadUrl": "https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/a4cc8652318cf0f51e668f2c46b6d3a3e58e68f7/endha-koland-universal.tar.zst",
+  "sha256": "cbbdd621d32fb16ce843dad33cfd11f0d305e862c4943e716ce7706609ce940b",
+  "downloadUrl": "https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/1b3010afa3c02d76b16d51e3747da1d80282b045/endha-koland-universal.tar.zst",
   "highlights": [
+    "Modo Reposar v2.0: auto-rearmado instantáneo de IdleMonitor (soluciona que no se activara solo), cola secuencial atómica de hardware sin race conditions, restauración exacta de perfil y CPU Boost completo al despertar, detector multimedia real sin falsos positivos (video/audio/llamadas/inhibidores), soporte PrepareForSleep, brillo en reposo configurable (2-15%), DPMS opcional y diagnóstico en vivo en Energía y Reposo",
     "Nuevo apartado Color de iconos y barra en Personalizar (Pure Floating Liquid Glass): color global con paleta/Hex/rápidos, modo Multicolor, sincronizar Del cristal, personalización individual por icono (Wi-Fi, Bluetooth, Audio, Brillo, Batería, Notificaciones y Escritorios/Dock) y alcances opcionales para Texto/reloj, Logo EndHa y Paneles/Ajustes (0% CPU extra)",
     "Pantalla de bloqueo y SDDM 100% parcheados (modo Sólido Mate opaco de alto contraste, layout anti-colisión y sincronización atómica), botón para desactivar animaciones del escritorio en Personalizar, fix del rebote inicial en Wi-Fi/Bluetooth y shell sin polling (eventos D-Bus, SystemClock y toasts en GPU)",
     "Motor OTA en tiempo real (aviso flotante Liquid Glass + píldora en barra + HEAD ~200 B sin bucles), nuevo Centro de Ajustes modular Pure Floating Liquid Glass v10 y corrección de zonas táctiles en Menú EndHa y Batería",
-    "Nuevo apartado Pantalla de Bloqueo en Apariencia: personalización completa de SDDM (fondo independiente o sincronizado, reloj 12h/24h, color Hex y subtítulo) + botón Bloquear SDDM Eco 0% consumo",
-    "Detector real de reproducción de video y audio (PipeWire, ALSA PCM, MPRIS y Pantalla Completa) para evitar que Modo Reposo se active viendo videos"
+    "Nuevo apartado Pantalla de Bloqueo en Apariencia: personalización completa de SDDM (fondo independiente o sincronizado, reloj 12h/24h, color Hex y subtítulo) + botón Bloquear SDDM Eco 0% consumo"
   ]
 }
