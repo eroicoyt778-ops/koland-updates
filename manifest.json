@@ -1,16 +1,16 @@
 {
-  "version": "3.4.0",
+  "version": "3.5.0",
   "codename": "Obsidian Overdrive",
-  "releasedAt": "2026-11-22",
+  "releasedAt": "2026-11-23",
   "channel": "Stable · Universal x86_64",
-  "sizeMB": "9.0MB",
-  "sha256": "f9eb8c4bbd971df3a61aeb60ebd4ad8fb523cffe6e3ed7d8044545113f8feb62",
-  "downloadUrl": "https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/87455e7301561934b681bd4e4f2980a3ed94b9ef/endha-koland-universal.tar.zst",
+  "sizeMB": "9.1MB",
+  "sha256": "45689e984219f2dceb784211a016df8e54b3cb2a20146575d55f500b152a6227",
+  "downloadUrl": "https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/47c5fce0161762dc69701e4a0438bc78e4838ed2/endha-koland-universal.tar.zst",
   "highlights": [
+    "Motor OTA en tiempo real (aviso flotante Liquid Glass + píldora en barra + HEAD ~200 B sin bucles), nuevo Centro de Ajustes modular Pure Floating Liquid Glass v10 y corrección de zonas táctiles en Menú EndHa y Batería",
     "Nuevo apartado Pantalla de Bloqueo en Apariencia: personalización completa de SDDM (fondo independiente o sincronizado, reloj 12h/24h, color Hex y subtítulo) + botón Bloquear SDDM Eco 0% consumo",
     "Detector real de reproducción de video y audio (PipeWire, ALSA PCM, MPRIS y Pantalla Completa) para evitar que Modo Reposo se active viendo videos",
     "Panel de Sonido con selector de Salida/Micrófono y Modo Múltiple, Pantalla estilo Apple Displays con desplegables, Color Hex (#75343f) + Bordes y 0% uso GPU en Modo Reposo",
-    "Motor Universal Fullscreen Overdrive por Monitor (0 shaders en pantalla completa + aislamiento de núcleos)",
-    "Segundo monitor con Obsidian Liquid Glass 100% intacto mientras juegas en pantalla completa"
+    "Motor Universal Fullscreen Overdrive por Monitor (0 shaders en pantalla completa + aislamiento de núcleos)"
   ]
 }
