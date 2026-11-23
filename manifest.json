@@ -1,16 +1,16 @@
 {
-  "version": "3.3.0",
+  "version": "3.3.1",
   "codename": "Obsidian Overdrive",
   "releasedAt": "2026-11-22",
   "channel": "Stable · Universal x86_64",
   "sizeMB": "9.0MB",
-  "sha256": "1da7df0bca8957bb72090312087de84f906170e58e03dde79aac920a82cf3879",
+  "sha256": "09991be7535f48e7c0dc281a5af24a649040a2749afb92017c468da11eaa3964",
   "downloadUrl": "https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/main/endha-koland-universal.tar.zst",
   "highlights": [
+    "Detector real de reproducción de video y audio (PipeWire, ALSA PCM, MPRIS y Pantalla Completa) para evitar que Modo Reposo se active viendo videos",
     "Panel de Sonido con selector de Salida/Micrófono y Modo Múltiple, Pantalla estilo Apple Displays con desplegables, Color Hex (#75343f) + Bordes y 0% uso GPU en Modo Reposo",
     "Motor Universal Fullscreen Overdrive por Monitor (0 shaders en pantalla completa + aislamiento de núcleos)",
     "Segundo monitor con Obsidian Liquid Glass 100% intacto mientras juegas en pantalla completa",
-    "Redimensión instantánea de barra y fondo (+80 ms) sin parpadeo negro",
-    "Purga automática de procesos fantasma (SteamCEF / Xwayland) y consumo base ~440 MB RAM"
+    "Redimensión instantánea de barra y fondo (+80 ms) sin parpadeo negro"
   ]
 }
