@@ -1,6 +1,6 @@
 # KoLand OS · Universal OTA Updates (`Obsidian Liquid Glass`)
 
-![Versión](https://img.shields.io/badge/KoLand_OS-v3.7.0-10b981?style=for-the-badge)
+![Versión](https://img.shields.io/badge/KoLand_OS-v3.7.1-10b981?style=for-the-badge)
 ![Codename](https://img.shields.io/badge/Edici%C3%B3n-Obsidian_Overdrive-18181b?style=for-the-badge)
 ![Arquitectura](https://img.shields.io/badge/Universal-x86--64--v2-3b82f6?style=for-the-badge)
 ![Consumo](https://img.shields.io/badge/OTA_Reposo-0.0_MB_RAM-f59e0b?style=for-the-badge)
@@ -13,24 +13,24 @@ Servidor oficial de actualizaciones OTA firmadas (SHA-256) para el entorno de es
 
 | Campo | Valor |
 | --- | --- |
-| **Versión actual** | `v3.7.0` (*Obsidian Overdrive*) |
+| **Versión actual** | `v3.7.1` (*Obsidian Overdrive*) |
 | **Fecha de lanzamiento** | `2026-11-24` |
 | **Canal** | `Stable · Universal x86_64` |
 | **Tamaño del paquete** | `9.7MB` |
-| **Firma SHA-256** | `66b4e27269142fb9d134698ec26ee0e924bbd1aa2e34cc6809bee185db4113ec` |
-| **Release en GitHub** | [`v3.7.0`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.7.0) |
-| **Manifiesto OTA** | [`manifest.json`](https://github.com/eroicoyt778-ops/koland-updates/releases/download/v3.7.0/manifest.json) · [`main/manifest.json`](https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/main/manifest.json) |
+| **Firma SHA-256** | `8e7e0bf16407f3b07be84f0a881f54170d7cf232f8a7312db6fc65ceef0f1397` |
+| **Release en GitHub** | [`v3.7.1`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.7.1) |
+| **Manifiesto OTA** | [`manifest.json`](https://github.com/eroicoyt778-ops/koland-updates/releases/download/v3.7.1/manifest.json) · [`main/manifest.json`](https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/main/manifest.json) |
 | **Paquete Universal** | [`endha-koland-universal.tar.zst`](https://github.com/eroicoyt778-ops/koland-updates/releases/latest/download/endha-koland-universal.tar.zst) |
 
 ---
 
 ## Novedades destacadas
 
+- Universal Gaming Overdrive v2.0: controlador HW v4 con game-off real (corrige GPU clavada en high) y presupuesto térmico PPT inteligente en APUs + soporte NVIDIA, partición física SMT-aware + 3D V-Cache + árbol Proton/Wine de 8 niveles, PipeWire RT libre de xruns, Escudo Direct Scanout 0 ms (Game DND), Wi-Fi 0-Jitter y detección automática en ventana
 - Motor óptico Apple iOS 26 Liquid Glass v11 en tiempo real (120 Hz Ley de Snell 3D + espejo Schlick + doble textura + 0 FBOs QML) y Optimización Central v3.7 (-52% RAM a ~80 MB, demonios C nativos, galería GPU 0-FBO con caché vipsthumbnail, migración total a PanelWindow y 0% shaders en juegos Fullscreen)
 - Modo Reposar v3.1 Zero-Freeze (0 bucles · 100% eventos MPRIS/PipeWire/Hyprland) + Agente Polkit nativo Obsidian Liquid Glass (-57 MB RAM al reemplazar polkit-gnome): cronómetro hardware exacto sin desfasarse tras videos/juegos, despertar triple-redundante en todos los monitores, controlador HW v3.0 con busctl (<25 ms CPU unlock, ASPM seguro sin congelar NVMe/Wi-Fi/GPU) y aviso automático post-instalación para actualizar el controlador en Energía y Reposo → Actualizar v3
 - Panel de Sonido v2.0 (Pure Floating Liquid Glass): migración a PanelWindow con altura fija y máscara exacta (cero temblores/recortes al abrir desplegables), fix crítico de Modo Múltiple (ya no explota a 150% y restaura salida/puerto/volumen exactos al desactivar), sliders nativos PipeWire 0 ms sin rebote ni NaN%, auto-desmuteo al subir volumen, iconos Nerd Font alineados sin colisión en Boost 150%, sincronización de color personalizado y soporte IPC audio
 - Modo Reposar v2.0: auto-rearmado instantáneo de IdleMonitor (soluciona que no se activara solo), cola secuencial atómica de hardware sin race conditions, restauración exacta de perfil y CPU Boost completo al despertar, detector multimedia real sin falsos positivos (video/audio/llamadas/inhibidores), soporte PrepareForSleep, brillo en reposo configurable (2-15%), DPMS opcional y diagnóstico en vivo en Energía y Reposo
-- Nuevo apartado Color de iconos y barra en Personalizar (Pure Floating Liquid Glass): color global con paleta/Hex/rápidos, modo Multicolor, sincronizar Del cristal, personalización individual por icono (Wi-Fi, Bluetooth, Audio, Brillo, Batería, Notificaciones y Escritorios/Dock) y alcances opcionales para Texto/reloj, Logo EndHa y Paneles/Ajustes (0% CPU extra)
 
 ---
 
@@ -49,6 +49,7 @@ Servidor oficial de actualizaciones OTA firmadas (SHA-256) para el entorno de es
 <!-- HISTORY_START -->
 | Versión | Fecha | Cambios principales |
 | --- | --- | --- |
+| [`v3.7.1`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.7.1) | `2026-11-24` | Universal Gaming Overdrive v2.0: controlador HW v4 con game-off real (corrige GPU clavada en high) y presupuesto térmico PPT inteligente en APUs + soporte NVIDIA, partición física SMT-aware + 3D V-Cache + árbol Proton/Wine de 8 niveles, PipeWire RT libre de xruns, Escudo Direct Scanout 0 ms (Game DND), Wi-Fi 0-Jitter y detección automática en ventana |
 | [`v3.7.0`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.7.0) | `2026-11-24` | Motor óptico Apple iOS 26 Liquid Glass v11 en tiempo real (120 Hz Ley de Snell 3D + espejo Schlick + doble textura + 0 FBOs QML) y Optimización Central v3.7 (-52% RAM a ~80 MB, demonios C nativos, galería GPU 0-FBO con caché vipsthumbnail, migración total a PanelWindow y 0% shaders en juegos Fullscreen) |
 | [`v3.6.3`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.6.3) | `2026-11-23` | Modo Reposar v3.1 Zero-Freeze (0 bucles · 100% eventos MPRIS/PipeWire/Hyprland) + Agente Polkit nativo Obsidian Liquid Glass (-57 MB RAM al reemplazar polkit-gnome): cronómetro hardware exacto sin desfasarse tras videos/juegos, despertar triple-redundante en todos los monitores, controlador HW v3.0 con busctl (<25 ms CPU unlock, ASPM seguro sin congelar NVMe/Wi-Fi/GPU) y aviso automático post-instalación para actualizar el controlador en Energía y Reposo → Actualizar v3 |
 | [`v3.6.2`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.6.2) | `2026-11-23` | Panel de Sonido v2.0 (Pure Floating Liquid Glass): migración a PanelWindow con altura fija y máscara exacta (cero temblores/recortes al abrir desplegables), fix crítico de Modo Múltiple (ya no explota a 150% y restaura salida/puerto/volumen exactos al desactivar), sliders nativos PipeWire 0 ms sin rebote ni NaN%, auto-desmuteo al subir volumen, iconos Nerd Font alineados sin colisión en Boost 150%, sincronización de color personalizado y soporte IPC audio |
