@@ -1,16 +1,16 @@
 {
-  "version": "3.7.3",
+  "version": "3.7.4",
   "codename": "Obsidian Overdrive",
   "releasedAt": "2026-11-24",
   "channel": "Stable · Universal x86_64",
   "sizeMB": "9.7MB",
-  "sha256": "773e12b78d1e9ae32170bcf9486608001a075c12b93b5f264473520168019501",
-  "downloadUrl": "https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/366b8aaca6184630ae485b8092f12241084f3719/endha-koland-universal.tar.zst",
+  "sha256": "c1a626571a2c12dd2f772932540370dc0e6ab2774e85e400f2e537847d8e6a21",
+  "downloadUrl": "https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/a004b47f869bf1e2a42056b817dcaf5c05830763/endha-koland-universal.tar.zst",
   "highlights": [
+    "Controlador Universal de Ventilador v2.0 + Perfiles Térmicos v5.0: soporte nativo en C para ThinkPad Classic y Edge E431 (/proc/acpi/ibm/fan + thinkpad_hwmon PWM + auto fan_control=1 en caliente), IdeaPad/Legion, ASUS EC y hwmon PWM universal; instalación automática de koland-fan-control.service en el Paquete Universal y OTA; selector clicable Auto/Medio/Máximo en el icono de ventilador y corrección del salto de perfil Turbo/Normal a Ahorro en CPUs sin ACPI platform_profile",
     "Fix definitivo de Batería Fijada sobre Pantalla Completa + Paquete Universal: mantiene Batería fija en capa Overlay (F11/juegos) con telemetría y Liquid Glass v11 en vivo incluso en laptops de 1 monitor, corrige el congelamiento en instalaciones universales migrando harich-wall.service a QSG_RENDER_LOOP=basic + sin mesa_glthread + new_render_scheduling=false + direct_scanout=0 dinámico mientras está fijado, añade desfijado/cierre en 1 clic dentro de juegos + botón ✕ + atajo SUPER+B y unifica prlimit/renice root en endha-repose",
     "Fix crítico del panel de Batería en juegos (PCs de 1 monitor): auto-desfijado/cierre limpio al entrar en Pantalla Completa, telemetría en vivo sin congelarse, botón cerrar directo en modo Fijado, commit inmediato de capa Wayland y soporte de desactivación manual de Gaming Overdrive",
     "Universal Gaming Overdrive v2.0: controlador HW v4 con game-off real (corrige GPU clavada en high) y presupuesto térmico PPT inteligente en APUs + soporte NVIDIA, partición física SMT-aware + 3D V-Cache + árbol Proton/Wine de 8 niveles, PipeWire RT libre de xruns, Escudo Direct Scanout 0 ms (Game DND), Wi-Fi 0-Jitter y detección automática en ventana",
-    "Motor óptico Apple iOS 26 Liquid Glass v11 en tiempo real (120 Hz Ley de Snell 3D + espejo Schlick + doble textura + 0 FBOs QML) y Optimización Central v3.7 (-52% RAM a ~80 MB, demonios C nativos, galería GPU 0-FBO con caché vipsthumbnail, migración total a PanelWindow y 0% shaders en juegos Fullscreen)",
-    "Modo Reposar v3.1 Zero-Freeze (0 bucles · 100% eventos MPRIS/PipeWire/Hyprland) + Agente Polkit nativo Obsidian Liquid Glass (-57 MB RAM al reemplazar polkit-gnome): cronómetro hardware exacto sin desfasarse tras videos/juegos, despertar triple-redundante en todos los monitores, controlador HW v3.0 con busctl (<25 ms CPU unlock, ASPM seguro sin congelar NVMe/Wi-Fi/GPU) y aviso automático post-instalación para actualizar el controlador en Energía y Reposo → Actualizar v3"
+    "Motor óptico Apple iOS 26 Liquid Glass v11 en tiempo real (120 Hz Ley de Snell 3D + espejo Schlick + doble textura + 0 FBOs QML) y Optimización Central v3.7 (-52% RAM a ~80 MB, demonios C nativos, galería GPU 0-FBO con caché vipsthumbnail, migración total a PanelWindow y 0% shaders en juegos Fullscreen)"
   ]
 }
