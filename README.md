@@ -1,11 +1,11 @@
-# KoLand OS · Universal OTA Updates (`Obsidian Liquid Glass`)
+# KoLand OS · Universal OTA Updates (`Obsidian Native Rust`)
 
-![Versión](https://img.shields.io/badge/KoLand_OS-v3.8.0-10b981?style=for-the-badge)
-![Codename](https://img.shields.io/badge/Edici%C3%B3n-Obsidian_Overdrive-18181b?style=for-the-badge)
-![Arquitectura](https://img.shields.io/badge/Universal-x86--64--v2-3b82f6?style=for-the-badge)
-![Consumo](https://img.shields.io/badge/OTA_Reposo-0.0_MB_RAM-f59e0b?style=for-the-badge)
+![Versión](https://img.shields.io/badge/KoLand_OS-v4.0.0-10b981?style=for-the-badge)
+![Codename](https://img.shields.io/badge/Edici%C3%B3n-Obsidian_Native_Rust-18181b?style=for-the-badge)
+![Arquitectura](https://img.shields.io/badge/Universal-x86--64-3b82f6?style=for-the-badge)
+![Shell RAM](https://img.shields.io/badge/Shell_Rust-~20_MB_PSS-f59e0b?style=for-the-badge)
 
-Servidor oficial de actualizaciones OTA firmadas (SHA-256) para el entorno de escritorio **EndHa Win + Koland Universal (`x86-64-v2` · AMD / Intel / NVIDIA)**.
+Servidor oficial de actualizaciones OTA firmadas (SHA-256) e instalador universal para **EndHa Win + KoLand OS (`x86-64` · AMD / Intel / NVIDIA · Laptops y Escritorio)**.
 
 ---
 
@@ -13,34 +13,33 @@ Servidor oficial de actualizaciones OTA firmadas (SHA-256) para el entorno de es
 
 | Campo | Valor |
 | --- | --- |
-| **Versión actual** | `v3.8.0` (*Obsidian Overdrive*) |
-| **Fecha de lanzamiento** | `2026-11-25` |
+| **Versión actual** | `v4.0.0` (*Obsidian Native Rust*) |
+| **Fecha de lanzamiento** | `2026-11-26` |
 | **Canal** | `Stable · Universal x86_64` |
-| **Tamaño del paquete** | `11MB` |
-| **Firma SHA-256** | `04debd648ffd45b927618d972f6b22c65846bf562f6ea7e931cfaafbdef8b144` |
-| **Release en GitHub** | [`v3.8.0`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.8.0) |
-| **Manifiesto OTA** | [`manifest.json`](https://github.com/eroicoyt778-ops/koland-updates/releases/download/v3.8.0/manifest.json) · [`main/manifest.json`](https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/main/manifest.json) |
+| **Tamaño del paquete** | `13MB` |
+| **Firma SHA-256** | `4c558c038ce358201e1428a629c24e1a6b863e1037fea78b7cc56f1e85863e71` |
+| **Release en GitHub** | [`v4.0.0`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v4.0.0) |
+| **Manifiesto OTA** | [`manifest.json`](https://github.com/eroicoyt778-ops/koland-updates/releases/download/v4.0.0/manifest.json) · [`main/manifest.json`](https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/main/manifest.json) |
 | **Paquete Universal** | [`endha-koland-universal.tar.zst`](https://github.com/eroicoyt778-ops/koland-updates/releases/latest/download/endha-koland-universal.tar.zst) |
 
 ---
 
 ## Novedades destacadas
 
+- KoLand 4.0 · Shell 100% Nativo en Rust (endha-shell ~20 MB PSS · 0% CPU · Quickshell retirado): nueva Barra de tareas adaptable (4 bordes: Abajo/Arriba/Izquierda/Derecha + modo Compacto en Ajustes → Personalizar), Polkit nativo sd-bus, Bloqueo ext-session-lock-v1 + PAM, Wallpaper multi-monitor sin SHM residente, SDDM Obsidian Wayland 0-RAM (weston kiosk adaptativo para AMD/Intel/NVIDIA), migración automática sin procesos duplicados y soporte universal x86-64
 - Motor Core Nativo en Rust v1.0 (endha-core + endha-repose v6.0 · 858 KB · x86-64 universal): reescritura completa en Rust sin dependencias de Telemetría (3.5x), Audio/Modo Múltiple (8.1x · 0 python3), Detector Reposo (2.1x · 0 jq), Gaming Overdrive con syscalls Linux directas (13.2x), Pantalla/Nocturno/SDDM/Importador de Fondos, OTA con SHA-256 nativo (6.7x) y controlador root endha-repose v6.0 (<2 ms con flock/prlimit64 nativos)
 - Controlador Universal de Ventilador v2.0 + Perfiles Térmicos v5.0: soporte nativo en C para ThinkPad Classic y Edge E431 (/proc/acpi/ibm/fan + thinkpad_hwmon PWM + auto fan_control=1 en caliente), IdeaPad/Legion, ASUS EC y hwmon PWM universal; instalación automática de koland-fan-control.service en el Paquete Universal y OTA; selector clicable Auto/Medio/Máximo en el icono de ventilador y corrección del salto de perfil Turbo/Normal a Ahorro en CPUs sin ACPI platform_profile
 - Fix definitivo de Batería Fijada sobre Pantalla Completa + Paquete Universal: mantiene Batería fija en capa Overlay (F11/juegos) con telemetría y Liquid Glass v11 en vivo incluso en laptops de 1 monitor, corrige el congelamiento en instalaciones universales migrando harich-wall.service a QSG_RENDER_LOOP=basic + sin mesa_glthread + new_render_scheduling=false + direct_scanout=0 dinámico mientras está fijado, añade desfijado/cierre en 1 clic dentro de juegos + botón ✕ + atajo SUPER+B y unifica prlimit/renice root en endha-repose
 - Fix crítico del panel de Batería en juegos (PCs de 1 monitor): auto-desfijado/cierre limpio al entrar en Pantalla Completa, telemetría en vivo sin congelarse, botón cerrar directo en modo Fijado, commit inmediato de capa Wayland y soporte de desactivación manual de Gaming Overdrive
-- Universal Gaming Overdrive v2.0: controlador HW v4 con game-off real (corrige GPU clavada en high) y presupuesto térmico PPT inteligente en APUs + soporte NVIDIA, partición física SMT-aware + 3D V-Cache + árbol Proton/Wine de 8 niveles, PipeWire RT libre de xruns, Escudo Direct Scanout 0 ms (Game DND), Wi-Fi 0-Jitter y detección automática en ventana
 
 ---
 
-## Motor OTA en tiempo real (`0.0 MB RAM` en reposo)
+## Arquitectura KoLand 4 (`~20 MB PSS` · `0.00% CPU` en reposo)
 
-- **Detección en 2 etapas sin bucles pesados:** consulta un `HEAD /releases/latest` (`cache-control: no-cache`, ~200 bytes, ~18 ms de CPU en Bash puro, sin rate-limit) y solo descarga `manifest.json` si hay una versión más nueva.
-- **Disparadores por eventos:** comprueba automáticamente al encender el PC (con reintento automático si el Wi-Fi conecta después), al reconectar red, al despertar de suspensión/reposo y cada 3–5 min (pausado automáticamente en Pantalla Completa).
-- **Motor Óptico Apple iOS 26 Liquid Glass v11 (`120 Hz`):** refracción física 3D por Ley de Snell sobre textura en vivo `1:1`, reflexión especular de espejo de Schlick en el labio curvo, dispersión cromática y **0 FBOs extra** en Quickshell (`~80 MB RAM`).
-- **Aviso nativo Liquid Glass v11:** tarjeta flotante persistente con botones **Actualizar ahora**, **Novedades** y **Más tarde**, más píldora indicadora en la barra inferior y punto de aviso en Menú EndHa / Ajustes.
-- **Actualización segura:** verifica integridad **SHA-256** y preserva las configuraciones locales de hardware y monitores (`env.lua`, `animations.lua`, `decoration.lua`, `koland-vars.lua`, `koland.lua`, `koland-user.lua`, `koland-displays.lua`).
+- **Shell 100% Nativo en Rust (`endha-shell` · Quickshell retirado):** barra de tareas multi-monitor, Dock con vista previa Wayland en vivo, Launcher, Notificaciones D-Bus, Ajustes completos de 5 pestañas, Polkit nativo (`sd-bus`), Pantalla de Bloqueo (`ext-session-lock-v1` + PAM), Wallpaper multi-monitor sin SHM residente y Modo Reposar, todo en un solo binario `x86-64` sin dependencias de Qt/QML.
+- **Barra de tareas adaptable (4 bordes + modo compacto):** configura desde **Ajustes → Personalizar** tamaño **Compacto** o **Estándar** y posición **Abajo, Arriba, Izquierda o Derecha**; todos los paneles, menús, previews y toasts se adaptan automáticamente.
+- **SDDM Obsidian Liquid Glass en Wayland 0-RAM (`weston --shell=kiosk`):** el gestor de inicio se cierra por completo al entrar al escritorio (**0 MB de Xorg/greeter en memoria**), con detección automática de teclado y validación segura para GPUs AMD, Intel y NVIDIA.
+- **Migración automática sin duplicados:** retira y desactiva automáticamente servicios antiguos (`harich-wall.service`, `qs`, `polkit-gnome`, QML obsoletos), enmascara `at-spi-dbus-bus.service` y preserva tus configuraciones personales de monitores y hardware.
 
 ---
 
@@ -49,6 +48,7 @@ Servidor oficial de actualizaciones OTA firmadas (SHA-256) para el entorno de es
 <!-- HISTORY_START -->
 | Versión | Fecha | Cambios principales |
 | --- | --- | --- |
+| [`v4.0.0`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v4.0.0) | `2026-11-26` | KoLand 4.0 · Shell 100% Nativo en Rust (endha-shell ~20 MB PSS · 0% CPU · Quickshell retirado): nueva Barra de tareas adaptable (4 bordes: Abajo/Arriba/Izquierda/Derecha + modo Compacto en Ajustes → Personalizar), Polkit nativo sd-bus, Bloqueo ext-session-lock-v1 + PAM, Wallpaper multi-monitor sin SHM residente, SDDM Obsidian Wayland 0-RAM (weston kiosk adaptativo para AMD/Intel/NVIDIA), migración automática sin procesos duplicados y soporte universal x86-64 |
 | [`v3.8.0`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.8.0) | `2026-11-25` | Motor Core Nativo en Rust v1.0 (endha-core + endha-repose v6.0 · 858 KB · x86-64 universal): reescritura completa en Rust sin dependencias de Telemetría (3.5x), Audio/Modo Múltiple (8.1x · 0 python3), Detector Reposo (2.1x · 0 jq), Gaming Overdrive con syscalls Linux directas (13.2x), Pantalla/Nocturno/SDDM/Importador de Fondos, OTA con SHA-256 nativo (6.7x) y controlador root endha-repose v6.0 (<2 ms con flock/prlimit64 nativos) |
 | [`v3.7.4`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.7.4) | `2026-11-24` | Controlador Universal de Ventilador v2.0 + Perfiles Térmicos v5.0: soporte nativo en C para ThinkPad Classic y Edge E431 (/proc/acpi/ibm/fan + thinkpad_hwmon PWM + auto fan_control=1 en caliente), IdeaPad/Legion, ASUS EC y hwmon PWM universal; instalación automática de koland-fan-control.service en el Paquete Universal y OTA; selector clicable Auto/Medio/Máximo en el icono de ventilador y corrección del salto de perfil Turbo/Normal a Ahorro en CPUs sin ACPI platform_profile |
 | [`v3.7.3`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v3.7.3) | `2026-11-24` | Fix definitivo de Batería Fijada sobre Pantalla Completa + Paquete Universal: mantiene Batería fija en capa Overlay (F11/juegos) con telemetría y Liquid Glass v11 en vivo incluso en laptops de 1 monitor, corrige el congelamiento en instalaciones universales migrando harich-wall.service a QSG_RENDER_LOOP=basic + sin mesa_glthread + new_render_scheduling=false + direct_scanout=0 dinámico mientras está fijado, añade desfijado/cierre en 1 clic dentro de juegos + botón ✕ + atajo SUPER+B y unifica prlimit/renice root en endha-repose |
@@ -69,10 +69,14 @@ Servidor oficial de actualizaciones OTA firmadas (SHA-256) para el entorno de es
 
 ---
 
-## Cómo actualizar
+## Cómo instalar o actualizar
 
-- **Desde el escritorio:** haz clic en **Actualizar ahora** en el aviso flotante o abre **Configuración → KoLand Update**.
-- **Desde terminal:**
+- **Desde el escritorio (OTA):** haz clic en **Actualizar ahora** en el aviso flotante o abre **Configuración → KoLand Update**.
+- **Desde terminal (OTA):**
   ```bash
-  ~/.config/koland/bar/endha-updater.sh install
+  ~/.config/koland/bar/endha-core updater install
+  ```
+- **Instalación universal limpia (`endha-koland-universal.tar.zst`):**
+  ```bash
+  tar --zstd -xf endha-koland-universal.tar.zst && ./install.sh
   ```
