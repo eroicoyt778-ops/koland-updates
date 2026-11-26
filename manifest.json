@@ -4,8 +4,8 @@
   "releasedAt": "2026-11-26",
   "channel": "Stable · Universal x86_64",
   "sizeMB": "13MB",
-  "sha256": "4c558c038ce358201e1428a629c24e1a6b863e1037fea78b7cc56f1e85863e71",
-  "downloadUrl": "https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/24f7ebc48fa3eb8de5990dd2cc17509a15ee524f/endha-koland-universal.tar.zst",
+  "sha256": "9e09adf0ef4acbd674d8ac4f8a577f5496f695ad48e927efa0f30b9fa8b29515",
+  "downloadUrl": "https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/19de1cde42d50e9b3c0ba9bb035eb28f4311c904/endha-koland-universal.tar.zst",
   "highlights": [
     "KoLand 4.0 · Shell 100% Nativo en Rust (endha-shell ~20 MB PSS · 0% CPU · Quickshell retirado): nueva Barra de tareas adaptable (4 bordes: Abajo/Arriba/Izquierda/Derecha + modo Compacto en Ajustes → Personalizar), Polkit nativo sd-bus, Bloqueo ext-session-lock-v1 + PAM, Wallpaper multi-monitor sin SHM residente, SDDM Obsidian Wayland 0-RAM (weston kiosk adaptativo para AMD/Intel/NVIDIA), migración automática sin procesos duplicados y soporte universal x86-64",
     "Motor Core Nativo en Rust v1.0 (endha-core + endha-repose v6.0 · 858 KB · x86-64 universal): reescritura completa en Rust sin dependencias de Telemetría (3.5x), Audio/Modo Múltiple (8.1x · 0 python3), Detector Reposo (2.1x · 0 jq), Gaming Overdrive con syscalls Linux directas (13.2x), Pantalla/Nocturno/SDDM/Importador de Fondos, OTA con SHA-256 nativo (6.7x) y controlador root endha-repose v6.0 (<2 ms con flock/prlimit64 nativos)",

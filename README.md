@@ -17,7 +17,7 @@ Servidor oficial de actualizaciones OTA firmadas (SHA-256) e instalador universa
 | **Fecha de lanzamiento** | `2026-11-26` |
 | **Canal** | `Stable · Universal x86_64` |
 | **Tamaño del paquete** | `13MB` |
-| **Firma SHA-256** | `4c558c038ce358201e1428a629c24e1a6b863e1037fea78b7cc56f1e85863e71` |
+| **Firma SHA-256** | `9e09adf0ef4acbd674d8ac4f8a577f5496f695ad48e927efa0f30b9fa8b29515` |
 | **Release en GitHub** | [`v4.0.0`](https://github.com/eroicoyt778-ops/koland-updates/releases/tag/v4.0.0) |
 | **Manifiesto OTA** | [`manifest.json`](https://github.com/eroicoyt778-ops/koland-updates/releases/download/v4.0.0/manifest.json) · [`main/manifest.json`](https://raw.githubusercontent.com/eroicoyt778-ops/koland-updates/main/manifest.json) |
 | **Paquete Universal** | [`endha-koland-universal.tar.zst`](https://github.com/eroicoyt778-ops/koland-updates/releases/latest/download/endha-koland-universal.tar.zst) |
